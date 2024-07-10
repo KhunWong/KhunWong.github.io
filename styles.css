@@ -1,0 +1,137 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --header-bg-color: #fff;
+    --column-bg-color: #fff;
+    --column-shadow-color: rgba(0, 0, 0, 0.1);
+    --icon-color: #000;
+}
+
+body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #fff;
+    --header-bg-color: #2c2c2c;
+    --column-bg-color: #333;
+    --column-shadow-color: rgba(255, 255, 255, 0.1);
+    --icon-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.contact-icons .home-icon img,
+.contact-icons .contact-icon img,
+.contact-icons .theme-toggle img {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s;
+}
+
+.contact-icons .home-icon img[src$=".svg"],
+.contact-icons .contact-icon img[src$=".svg"],
+.contact-icons .theme-toggle img[src$=".svg"] {
+    filter: none;
+}
+
+body.dark-mode .contact-icons .home-icon img[src$=".svg"],
+body.dark-mode .contact-icons .contact-icon img[src$=".svg"],
+body.dark-mode .contact-icons .theme-toggle img[src$=".svg"] {
+    filter: invert(100%);
+}
+
+.right-icons {
+    display: flex;
+    gap: 15px;
+}
+
+hr {
+    margin: 0px 10% 20px;
+    border: none;
+    border-top: 1px solid var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--column-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--column-shadow-color);
+}
+
+.column img {
+    width: 40%;
+    /* max-width: 500px; */
+    max-height: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.column img[src$=".svg"] {
+    fill: var(--icon-color);
+    transition: fill 0.3s;
+}
+
+.column .description {
+    flex: 1;
+}
+
+.column .description h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.column .description p {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 5%;
+    }
+    .contact-icons {
+        margin: 0 5%;
+    }
+    hr {
+        margin: 20px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 2%;
+    }
+    .contact-icons {
+        justify-content: space-between;
+        margin: 0 2%;
+    }
+    hr {
+        margin: 20px 2%;
+    }
+}
+*/
