@@ -19,6 +19,10 @@ body.dark-mode {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 header {
@@ -82,28 +86,30 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--column-shadow-color);
+
 }
 
-.column img {
-    width: 40%;
-    /* max-width: 500px; */
-    max-height: 200px;
+.column a img {
+    /* width: 100%; 确保图片的宽度占满容器 */
+    /* height: auto; 维持图片的高度自动，确保比例正确 */
+    max-width: 500px;
     margin-right: 20px;
     border-radius: 8px;
+    object-fit: contain;/* 确保图片内容保持等比例缩放 */
 }
 
-.column img[src$=".svg"] {
+/* .column a img[src$=".svg"] {
     fill: var(--icon-color);
     transition: fill 0.3s;
-}
+} */
 
 .column .description {
     flex: 1;
 }
 
 .column .description h2 {
-    margin-bottom: 10px;
     font-size: 1.5em;
+    margin-top: 0px;
 }
 
 .column .description p {
@@ -134,4 +140,4 @@ main {
         margin: 20px 2%;
     }
 }
-*/
+
