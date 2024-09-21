@@ -126,6 +126,14 @@ main {
     hr {
         margin: 20px 5%;
     }
+    .column {
+        flex-direction: column;
+    }
+    .column a img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -139,5 +147,17 @@ main {
     hr {
         margin: 20px 2%;
     }
+    .column {
+        padding: 10px;
+    }
+    .column .description {
+        margin-top: 10px;
+    }
+    .column .description h2 {
+        font-size: 1.2em;
+    }
+    .column .description p {
+        font-size: 0.9em;
+    }   
 }
 
