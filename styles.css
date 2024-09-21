@@ -98,10 +98,10 @@ main {
     object-fit: contain;/* 确保图片内容保持等比例缩放 */
 }
 
-/* .column a img[src$=".svg"] {
+.column a img[src$=".svg"] {
     fill: var(--icon-color);
     transition: fill 0.3s;
-} */
+}
 
 .column .description {
     flex: 1;
