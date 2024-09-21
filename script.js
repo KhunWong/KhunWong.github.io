@@ -4,7 +4,7 @@ let isDarkMode = localStorage.getItem("darkMode") === "true" || prefersDarkSchem
 const toggleButton = document.getElementById("toggleButton");
 
 // 根据当前模式设置初始按钮图标
-toggleButton.src = isDarkMode ? "https://khunwong.github.io/images/mode-icon-dark.svg" : "https://khunwong.github.io/images/images/mode-icon.svg";
+toggleButton.src = isDarkMode ? "https://khunwong.github.io/images/mode-icon-dark.svg" : "https://khunwong.github.io/images/mode-icon.svg";
 
 // 应用初始样式
 if (isDarkMode) {
@@ -18,12 +18,12 @@ function toggleDarkMode() {
 
     if (isDarkMode) {
         document.body.classList.add("dark-mode");
-        toggleButton.src = "https://khunwong.github.io/imagesimages/mode-icon-dark.svg";
+        toggleButton.src = "https://khunwong.github.io/images/mode-icon-dark.svg";
         localStorage.setItem("darkMode", "true");
         
     } else {
         document.body.classList.remove("dark-mode");
-        toggleButton.src = "https://khunwong.github.io/imagesimages/mode-icon.svg";
+        toggleButton.src = "https://khunwong.github.io/images/mode-icon.svg";
         localStorage.setItem("darkMode", "false");
     }
 }

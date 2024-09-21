@@ -90,8 +90,8 @@ main {
 }
 
 .column a img {
-    /* width: 100%; 确保图片的宽度占满容器 */
-    /* height: auto; 维持图片的高度自动，确保比例正确 */
+    width: 100%; /*确保图片的宽度占满容器*/
+    height: auto; /*维持图片的高度自动，确保比例正确 */
     max-width: 500px;
     margin-right: 20px;
     border-radius: 8px;
