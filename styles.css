@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #f4f4f4;
-    --text-color: #000;
+    --bg-color: #fdfdfd;
+    --text-color: #333;
     --header-bg-color: #fff;
     --column-bg-color: #fff;
     --column-shadow-color: rgba(0, 0, 0, 0.1);
-    --icon-color: #000;
+    --icon-color: #333;
 }
 
 body.dark-mode {
@@ -21,24 +21,27 @@ body {
     color: var(--text-color);
     max-width: 1050px;
     margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
+    padding: 0;
+    line-height: 1.5;
+    overflow-y: scroll;
 }
 
 header {
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    padding: 0;
 }
 
 header h1 {
     font-size: 2.5em;
+    font-weight: lighter;
 }
 
 .contact-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .contact-icons .home-icon img,
@@ -69,7 +72,7 @@ body.dark-mode .contact-icons .theme-toggle img[src$=".svg"] {
 hr {
     margin: 0px 10% 20px;
     border: none;
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid #919191;
 }
 
 main {
@@ -79,6 +82,11 @@ main {
     padding: 0 10%;
 }
 
+.typewriter {
+    font-family: 'Typewriter', monospace;
+    font-size: 44px;
+}
+
 .column {
     display: flex;
     flex-direction: row;
@@ -86,7 +94,6 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--column-shadow-color);
-
 }
 
 .column a img {
@@ -114,6 +121,48 @@ main {
 
 .column .description p {
     font-size: 1em;
+}
+
+.context {
+    background-color: var(--column-bg-color);
+    padding: 20px;
+    margin: 2% ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--column-shadow-color);
+}
+
+.post-item {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center
+}
+
+.post-item .post-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing:.1px
+}
+
+.post-item .post-item-title a {
+    color:#333;
+    transition:all 150ms ease-in 0s;
+    text-decoration: none;
+}
+
+.post-item .post-item-title a:hover, .post-item .post-item-title afocus {
+    color:#3498db;
+}
+
+.copyright {
+    margin-top: 5%;
+    text-align: center;
+    color: #919191;
 }
 
 @media (max-width: 900px) {
@@ -161,3 +210,7 @@ main {
     }   
 }
 
+@font-face {
+    font-family: 'Typewriter';
+    src: url('fonts/Bohemian-Typewriter-1.ttf');
+}
