@@ -22,7 +22,7 @@ body {
     max-width: 1050px;
     margin: 0 auto;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.6;
     overflow-y: scroll;
 }
 
@@ -91,7 +91,8 @@ main {
     display: flex;
     flex-direction: row;
     background-color: var(--column-bg-color);
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--column-shadow-color);
 }
