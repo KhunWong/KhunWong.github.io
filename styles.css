@@ -171,11 +171,14 @@ main {
         padding: 0 5%;
     }
     .contact-icons {
-        margin: 0 5%;
+        margin: 0 auto;
     }
     hr {
-        margin: 20px 5%;
+        margin: 0px 10% 20px;
+        border: none;
+        border-top: 1px solid #919191;
     }
+    
     .column {
         flex-direction: column;
     }
@@ -192,10 +195,16 @@ main {
     }
     .contact-icons {
         justify-content: space-between;
-        margin: 0 2%;
+        margin: 0 auto;
     }
     hr {
-        margin: 20px 2%;
+        margin: 0px 10% 20px;
+        border: none;
+        border-top: 1px solid #919191;
+    }
+    header h1 {
+        font-size: 1.8em;
+        font-weight: lighter;
     }
     .column {
         padding: 10px;
