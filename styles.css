@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #fdfdfd;
+    --bg-color: #FFF9E6;
     --text-color: #333;
     --header-bg-color: #fff;
     --column-bg-color: #fff;
@@ -32,8 +32,8 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
-    font-weight: lighter;
+    font-size: 1.8em;
+    /* font-weight: lighter; */
 }
 
 .contact-icons {
@@ -41,14 +41,14 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 }
 
 .contact-icons .home-icon img,
 .contact-icons .contact-icon img,
 .contact-icons .theme-toggle img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     transition: filter 0.3s;
 }
 
@@ -70,7 +70,7 @@ body.dark-mode .contact-icons .theme-toggle img[src$=".svg"] {
 }
 
 hr {
-    margin: 0px 10% 20px;
+    margin: 0px 20% 20px;
     border: none;
     border-top: 1px solid #919191;
 }
@@ -79,7 +79,24 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 10%;
+    padding: 0 20%;
+    max-width: 660px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--text-color);
+    transition:all 150ms ease-in 0s;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color:#3498db;
+} 
+
+p {
+    font-size: 18px;
 }
 
 .typewriter {
@@ -124,14 +141,6 @@ main {
     font-size: 1em;
 }
 
-.context {
-    background-color: var(--column-bg-color);
-    padding: 20px;
-    margin: 2% ;
-    border-radius: 8px;
-    box-shadow: 0 0 10px var(--column-shadow-color);
-}
-
 .post-item {
     display: flex;
     padding-top: 5px;
@@ -140,25 +149,26 @@ main {
     flex-direction: row;
     align-items:center
 }
-
+/* 标题字体等 */
 .post-item .post-item-title {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: 16px;
+    margin: 0 0 5px 0;
+    /* border: 0; */
+    /* padding: 0; */
+    font-size: 18px;
     font-weight: 400;
-    letter-spacing:.1px
+    letter-spacing: .1px
 }
 
+/*  统一放到 a 标签里面了
 .post-item .post-item-title a {
-    color:#333;
+    color: var(--text-color);
     transition:all 150ms ease-in 0s;
     text-decoration: none;
-}
+} */
 
-.post-item .post-item-title a:hover, .post-item .post-item-title afocus {
+/* .post-item .post-item-title a:hover, .post-item .post-item-title afocus {
     color:#3498db;
-}
+} */
 
 .copyright {
     margin-top: 5%;
@@ -168,13 +178,13 @@ main {
 
 @media (max-width: 900px) {
     main {
-        padding: 0 5%;
+        padding: 0 20%;
     }
     .contact-icons {
         margin: 0 auto;
     }
     hr {
-        margin: 0px 10% 20px;
+        margin: 0px 20% 20px;
         border: none;
         border-top: 1px solid #919191;
     }
@@ -198,13 +208,13 @@ main {
         margin: 0 auto;
     }
     hr {
-        margin: 0px 10% 20px;
+        margin: 0px 20% 20px;
         border: none;
         border-top: 1px solid #919191;
     }
     header h1 {
         font-size: 1.8em;
-        font-weight: lighter;
+        /* font-weight: lighter; */
     }
     .column {
         padding: 10px;
