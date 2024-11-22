@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #FFF9E6;
+    --bg-color: #f9f9f9;
     --text-color: #333;
     --header-bg-color: #fff;
     --column-bg-color: #fff;
@@ -19,8 +19,8 @@ body.dark-mode {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    max-width: 1050px;
-    margin: 0 auto;
+    /* max-width: 1050px; */
+    margin: 0;
     padding: 0;
     line-height: 1.6;
     overflow-y: scroll;
@@ -28,12 +28,9 @@ body {
 
 header {
     text-align: center;
-    padding: 0;
-}
-
-header h1 {
-    font-size: 1.8em;
-    /* font-weight: lighter; */
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icons {
@@ -46,20 +43,23 @@ header h1 {
 
 .contact-icons .home-icon img,
 .contact-icons .contact-icon img,
+.contact-icons .about-icon img,
 .contact-icons .theme-toggle img {
     width: 28px;
     height: 28px;
-    transition: filter 0.3s;
+    /* transition: filter 0.3s; */
 }
 
 .contact-icons .home-icon img[src$=".svg"],
 .contact-icons .contact-icon img[src$=".svg"],
+.contact-icons .about-icon img[src$=".svg"],
 .contact-icons .theme-toggle img[src$=".svg"] {
     filter: none;
 }
 
 body.dark-mode .contact-icons .home-icon img[src$=".svg"],
 body.dark-mode .contact-icons .contact-icon img[src$=".svg"],
+body.dark-mode .contact-icons .about-icon img[src$=".svg"],
 body.dark-mode .contact-icons .theme-toggle img[src$=".svg"] {
     filter: invert(100%);
 }
@@ -84,9 +84,31 @@ main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.article-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-item {
+    padding: 10px;
+    /* border-bottom: 1px solid #ccc;  */
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.article-time {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
 a {
     color: var(--text-color);
-    transition:all 150ms ease-in 0s;
+    /* transition:all 150ms ease-in 0s; */
     text-decoration: none;
 }
 
@@ -101,74 +123,7 @@ p {
 
 .typewriter {
     font-family: 'Typewriter', monospace;
-    font-size: 44px;
 }
-
-.column {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--column-bg-color);
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px var(--column-shadow-color);
-}
-
-.column a img {
-    width: 100%; /*确保图片的宽度占满容器*/
-    height: auto; /*维持图片的高度自动，确保比例正确 */
-    max-width: 500px;
-    margin-right: 20px;
-    border-radius: 8px;
-    object-fit: contain;/* 确保图片内容保持等比例缩放 */
-}
-
-.column a img[src$=".svg"] {
-    fill: var(--icon-color);
-    transition: fill 0.3s;
-}
-
-.column .description {
-    flex: 1;
-}
-
-.column .description h2 {
-    font-size: 1.5em;
-    margin-top: 0px;
-}
-
-.column .description p {
-    font-size: 1em;
-}
-
-.post-item {
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 6px;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items:center
-}
-/* 标题字体等 */
-.post-item .post-item-title {
-    margin: 0 0 5px 0;
-    /* border: 0; */
-    /* padding: 0; */
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: .1px
-}
-
-/*  统一放到 a 标签里面了
-.post-item .post-item-title a {
-    color: var(--text-color);
-    transition:all 150ms ease-in 0s;
-    text-decoration: none;
-} */
-
-/* .post-item .post-item-title a:hover, .post-item .post-item-title afocus {
-    color:#3498db;
-} */
 
 .copyright {
     margin-top: 5%;
@@ -188,15 +143,6 @@ p {
         border: none;
         border-top: 1px solid #919191;
     }
-    
-    .column {
-        flex-direction: column;
-    }
-    .column a img {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -211,23 +157,7 @@ p {
         margin: 0px 0% 20px;
         border: none;
         border-top: 1px solid #919191;
-    }
-    header h1 {
-        font-size: 1.8em;
-        /* font-weight: lighter; */
-    }
-    .column {
-        padding: 10px;
-    }
-    .column .description {
-        margin-top: 10px;
-    }
-    .column .description h2 {
-        font-size: 1.2em;
-    }
-    .column .description p {
-        font-size: 0.9em;
-    }   
+    }  
 }
 
 @font-face {
