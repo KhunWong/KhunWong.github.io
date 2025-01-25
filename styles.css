@@ -80,8 +80,19 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 0 20%;
-    max-width: 660px;
+    max-width: 1200px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.index-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.article-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 60px; 
 }
 
 .article-list {
