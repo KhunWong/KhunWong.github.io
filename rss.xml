@@ -3,16 +3,16 @@
     <channel>
         <title>Personal Blog</title>
         <description>Thoughts, ideas, and stories from my journey</description>
-        <link>https://yourdomain.com</link>
-        <atom:link href="https://yourdomain.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <link>https://khunwong.github.io.com</link>
+        <atom:link href="https://khunwong.github.io.com/rss.xml" rel="self" type="application/rss+xml"/>
         <language>en-us</language>
         <lastBuildDate>Mon, 15 Jan 2024 12:00:00 GMT</lastBuildDate>
         
         <item>
             <title><![CDATA[Getting Started with Web Development]]></title>
             <description><![CDATA[Web development can seem overwhelming at first, but with the right approach and resources, anyone can learn to build amazing websites and applications.]]></description>
-            <link>https://yourdomain.com/sample-article-1.html</link>
-            <guid>https://yourdomain.com/sample-article-1.html</guid>
+            <link>https://khunwong.github.io.com/sample-article-1.html</link>
+            <guid>https://khunwong.github.io.com/sample-article-1.html</guid>
             <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
             <category>web-development, beginner, tutorial</category>
         </item>
@@ -20,8 +20,8 @@
         <item>
             <title><![CDATA[The Art of Minimalist Design]]></title>
             <description><![CDATA[Minimalism in design isn't just about using less—it's about using exactly what's needed to communicate effectively and create meaningful experiences.]]></description>
-            <link>https://yourdomain.com/sample-article-2.html</link>
-            <guid>https://yourdomain.com/sample-article-2.html</guid>
+            <link>https://khunwong.github.io.com/sample-article-2.html</link>
+            <guid>https://khunwong.github.io.com/sample-article-2.html</guid>
             <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
             <category>design, minimalism, philosophy</category>
         </item>
