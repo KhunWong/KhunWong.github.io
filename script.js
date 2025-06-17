@@ -51,12 +51,12 @@ class ArticleManager {
       },
       {
         id: "minimalist-design",
-        title: "The Art of Minimalist Design",
+        title: "我为什么成为基督徒",
         excerpt:
           "Minimalism in design isn't just about using less—it's about using exactly what's needed to communicate effectively and create meaningful experiences.",
         date: "2024-01-10",
         tags: ["design", "minimalism", "philosophy"],
-        url: "sample-article-2.html",
+        url: "001_why_i_am_a_christian.html",
       },
     ]
 
