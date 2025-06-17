@@ -4,62 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khun's Blog</title>
-    <link rel="stylesheet" href="https://khunwong.github.io/styles.css">
-    <!--测试用 -->
-    <!-- <link rel="stylesheet" href="./styles.css">  -->
-    <script src="https://khunwong.github.io/script.js" defer></script>
-    <link rel="apple-touch-icon" href="https://khunwong.github.io/images/MyIcon.ico">
-	<link rel="icon" href="https://khunwong.github.io/images/MyIcon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="alternate" type="application/rss+xml" title="Khun's Blog RSS" href="rss.xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
 </head>
 <body>
-    <header>
-        <h1 class="typewriter">Khun's Blog</h1>
-        <div class="contact-icons">
-            <a href="https://khunwong.github.io/index.html" class="home-icon" title="Home">
-                <img src="https://khunwong.github.io/images/home-icon.svg" alt="Home">
-            </a>
-            <div class="right-icons">
-                <a href="https://khunwong.github.io/about.html" class="about-icon" title="About">
-                    <img src="https://khunwong.github.io/images/about-icon.svg" alt="About">
-                </a>
-                <a href="mailto:kunnwang1994@gmail.com" class="contact-icon" title="Email">
-                    <img src="https://khunwong.github.io/images/email-icon.svg" alt="Email">
-                </a>
-                <a href="javascript:void(0);" class="theme-toggle" title="Toggle Dark Mode">
-                    <img src="https://khunwong.github.io/images/mode-icon-dark.svg" id="toggleButton" alt="Toggle Mode" onclick="toggleDarkMode()">
-                </a>
-            </div>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">
+                <a href="index.html">Khun's Blog</a>
+            </h1>
+            <nav class="nav">
+                <a href="about.html">About</a>
+                <a href="rss.xml" title="RSS Feed">RSS</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <article class="index-content">
-            <!-- 文章列表 -->
-            <div class="article-list">
-                <div class="article-item">
-                    <a href="./articles/Vol1-No1.html">
-                        <h2 class="article-title">文章标题太长了会怎么样呢测试测试测试测试测试测测试测试测试测试测试测试测试</h2>
-                    </a>
-                    <p class="article-time">2024-11-22</p>
-                </div>
-                <div class="article-item">
-                    <a href="./articles/Vol1-No2.html">
-                        <h2 class="article-title">文章标题2</h2>
-                    </a>
-                    <p class="article-time">2024-11-21</p>
-                </div>
-                <div class="article-item">
-                    <a href="./articles/Vol1_No3.html">
-                        <h2 class="article-title">我为什么是基督徒？</h2>
-                    </a>
-                    <p class="article-time">2024-11-20</p>
-                </div>
-              </div>
-        </article>
+    <main class="main">
+        <div class="container">
+            <!-- <section class="hero">
+                <h2>Welcome to My Blog</h2>
+                <p>Thoughts, ideas, and stories from my journey</p>
+            </section> -->
 
-        <small  class="copyright"> Copyright © 2024-2025, All rights reserved. </small> 
+            <section class="filters">
+                <h3>Filter by Tags</h3>
+                <div class="tag-filters" id="tagFilters">
+                    <button class="tag-filter active" data-tag="all">All</button>
+                </div>
+            </section>
 
+            <section class="articles" id="articlesContainer">
+                <!-- Articles will be loaded here -->
+            </section>
+        </div>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Khun's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
