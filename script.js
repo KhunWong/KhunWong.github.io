@@ -41,23 +41,23 @@ class ArticleManager {
   constructor() {
     this.articles = [
       {
-        id: "getting-started-web-dev",
-        title: "Getting Started with Web Development",
+        id: "name-meaning",
+        title: "我为什么给女儿起这个名字",
         excerpt:
-          "Web development can seem overwhelming at first, but with the right approach and resources, anyone can learn to build amazing websites and applications.",
-        date: "2024-01-15",
-        tags: ["web-development", "beginner", "tutorial"],
-        url: "sample-article-1.html",
+          "",
+        date: "2025-06-19",
+        tags: ["人生旅程"],
+        url: "001_what_meaning_of_my_daughters'_names.html",
       },
-      {
-        id: "minimalist-design",
-        title: "我为什么成为基督徒",
-        excerpt:
-          "Minimalism in design isn't just about using less—it's about using exactly what's needed to communicate effectively and create meaningful experiences.",
-        date: "2024-01-10",
-        tags: ["design", "minimalism", "philosophy"],
-        url: "001_why_i_am_a_christian.html",
-      },
+      // {
+      //   id: "minimalist-design",
+      //   title: "我为什么成为基督徒",
+      //   excerpt:
+      //     "",
+      //   date: "2025-10-10",
+      //   tags: ["人生旅程"],
+      //   url: "001_why_i_am_a_christian.html",
+      // },
     ]
 
     this.currentFilter = "all"

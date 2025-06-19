@@ -41,6 +41,12 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -350,7 +356,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .about-text {
