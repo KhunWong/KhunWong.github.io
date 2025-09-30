@@ -2,9 +2,7 @@
 
 ### Thoughts on faith and life.
 
-A minimalist personal blog built with pure HTML, CSS, and JavaScript, inspired by Hugo themes, Coded by AI(v0).
-
----
+### A minimalist personal blog built with pure HTML, CSS, and JavaScript, inspired by Hugo themes, Coded by AI(v0).
 
 #### Notes
 - This is a static site that can be deployed to any web server.
