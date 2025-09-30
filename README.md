@@ -1,20 +1,20 @@
-# Khun's Blog
+## Khun's Blog
 
-#### Thoughts on faith and life.
+### Thoughts on faith and life.
 
 A minimalist personal blog built with pure HTML, CSS, and JavaScript, inspired by Hugo themes, Coded by AI(v0).
 
 
-## Deployment
+#### Deployment
 This is a static site that can be deployed to any web server.
 
-## RSS Feed
+#### RSS Feed
 The RSS feed is automatically generated based on the articles array in `script.js`. 
 
-## Browser Support
+#### Browser Support
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - IE11+ (with some graceful degradation)
 - Mobile browsers
 
-## License
+#### License
 This project is open source and available under the MIT License.
