@@ -6,16 +6,8 @@ A minimalist personal blog built with pure HTML, CSS, and JavaScript, inspired b
 
 ---
 
-#### Deployment
-This is a static site that can be deployed to any web server.
-
-#### RSS Feed
-The RSS feed is automatically generated based on the articles array in `script.js`. 
-
-#### Browser Support
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- IE11+ (with some graceful degradation)
-- Mobile browsers
-
-#### License
-This project is open source and available under the MIT License.
+#### Notes
+- This is a static site that can be deployed to any web server.
+- The RSS feed is automatically generated based on the articles array in `script.js`. 
+- Browser Support: Chrome, Firefox, Safari, Edge, IE11+ (with some graceful degradation), Mobile browsers
+- License: This project is open source and available under the MIT License.
