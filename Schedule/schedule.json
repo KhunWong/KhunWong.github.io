@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Review",
+    "type": "review",
+    "time": "08:00",
+    "recurring": true,
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "description": "Daily morning review of tasks and priorities"
+  },
+  {
+    "id": 2,
+    "title": "Team Meeting",
+    "type": "meeting",
+    "time": "10:00",
+    "recurring": true,
+    "days": ["tuesday", "thursday"],
+    "description": "Weekly team sync meeting",
+    "location": "Conference Room A"
+  },
+  {
+    "id": 3,
+    "title": "Project Preparation",
+    "type": "preparation",
+    "time": "09:00",
+    "recurring": true,
+    "days": ["monday", "wednesday", "friday"],
+    "description": "Prepare materials for upcoming projects"
+  },
+  {
+    "id": 4,
+    "title": "Lunch Break",
+    "type": "out-of-office",
+    "time": "12:00",
+    "recurring": true,
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "description": "Lunch time"
+  },
+  {
+    "id": 5,
+    "title": "Client Call",
+    "type": "meeting",
+    "time": "14:00",
+    "recurring": true,
+    "days": ["wednesday"],
+    "description": "Weekly client check-in",
+    "location": "Zoom"
+  },
+  {
+    "id": 6,
+    "title": "Code Review",
+    "type": "review",
+    "time": "15:00",
+    "recurring": true,
+    "days": ["tuesday", "thursday"],
+    "description": "Review team code submissions"
+  },
+  {
+    "id": 7,
+    "title": "Sprint Planning",
+    "type": "preparation",
+    "time": "10:00",
+    "recurring": true,
+    "days": ["monday"],
+    "description": "Plan tasks for the week",
+    "location": "Conference Room B"
+  },
+  {
+    "id": 8,
+    "title": "Gym",
+    "type": "out-of-office",
+    "time": "18:00",
+    "recurring": true,
+    "days": ["monday", "wednesday", "friday"],
+    "description": "Evening workout session"
+  },
+  {
+    "id": 9,
+    "title": "Weekend Planning",
+    "type": "preparation",
+    "time": "09:00",
+    "recurring": true,
+    "days": ["saturday"],
+    "description": "Plan activities for the weekend"
+  },
+  {
+    "id": 10,
+    "title": "Family Time",
+    "type": "out-of-office",
+    "time": "10:00",
+    "recurring": true,
+    "days": ["sunday"],
+    "description": "Quality time with family"
+  },
+  {
+    "id": 11,
+    "title": "1-on-1 with Manager",
+    "type": "meeting",
+    "time": "16:00",
+    "recurring": true,
+    "days": ["friday"],
+    "description": "Weekly check-in with manager",
+    "location": "Manager's Office"
+  },
+  {
+    "id": 12,
+    "title": "Documentation",
+    "type": "preparation",
+    "time": "13:00",
+    "recurring": true,
+    "days": ["thursday"],
+    "description": "Update project documentation"
+  }
+]

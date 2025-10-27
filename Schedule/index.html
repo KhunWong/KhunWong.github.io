@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">📅 My Schedule Manager</h1>
+            <div class="header-controls">
+                <div class="filter-group">
+                    <label for="typeFilter">Filter by Type:</label>
+                    <select id="typeFilter" class="select">
+                        <option value="all">All Types</option>
+                        <option value="preparation">Preparation</option>
+                        <option value="review">Review</option>
+                        <option value="meeting">Meeting</option>
+                        <option value="out-of-office">Out of Office</option>
+                    </select>
+                </div>
+                <button id="todayBtn" class="btn btn-primary">Today's Highlights</button>
+            </div>
+        </header>
+
+        <!-- Today's Highlights Section -->
+        <div id="todayHighlights" class="today-highlights hidden">
+            <div class="highlights-header">
+                <h2>Today's Schedule</h2>
+                <button id="closeTodayBtn" class="btn-close">×</button>
+            </div>
+            <div id="todayContent" class="highlights-content"></div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <span class="legend-item">
+                <span class="legend-color preparation"></span>
+                Preparation
+            </span>
+            <span class="legend-item">
+                <span class="legend-color review"></span>
+                Review
+            </span>
+            <span class="legend-item">
+                <span class="legend-color meeting"></span>
+                Meeting
+            </span>
+            <span class="legend-item">
+                <span class="legend-color out-of-office"></span>
+                Out of Office
+            </span>
+        </div>
+
+        <!-- Schedule Grid -->
+        <div class="schedule-wrapper">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-column">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleBody">
+                    <!-- Schedule will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Edit Modal -->
+        <div id="editModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Task Details</h2>
+                    <button id="closeModal" class="btn-close">×</button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <!-- Task details will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>💡 How to Use:</h3>
+            <ul>
+                <li>Click on any task to view details</li>
+                <li>Use the filter dropdown to show specific task types</li>
+                <li>Click "Today's Highlights" to see today's schedule</li>
+                <li>Edit <code>schedule.json</code> to modify your schedule</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
