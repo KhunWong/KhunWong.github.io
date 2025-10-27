@@ -473,3 +473,47 @@ body {
         align-items: stretch;
     }
 }
+
+/*跨时间块显示*/
+/* <CHANGE> Updated day-cell to support grid layout for spanning tasks */
+.day-cell {
+    padding: 0.5rem;
+    border-right: 1px solid #e5e7eb;
+    min-height: 60px;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.25rem;
+    align-content: start;
+}
+
+
+/* <CHANGE> Added styles for spanning tasks */
+.task-spanning {
+    min-height: 100%;
+    padding: 0.75rem 0.5rem;
+}
+
+.task-spanning .task-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-spanning .task-time {
+    font-size: 0.85rem;
+}
+
+/* <CHANGE> Hide spanned cells from displaying duplicate content */
+.cell-spanned {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+
+/* <CHANGE> Improved task time display */
+.task-time {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
