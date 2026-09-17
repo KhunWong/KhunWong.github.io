@@ -42,6 +42,15 @@ class ArticleManager {
     this.articles = [
       {
         id: "name-meaning",
+        title: "在家教育的“道”与“术”",
+        excerpt:
+          "",
+        date: "2026-09-17",
+        tags: ["在家教育"],
+        url: "002_why_i_choose_homeschool.html",
+      },
+      {
+        id: "name-meaning",
         title: "我为什么给女儿起这个名字",
         excerpt:
           "",
@@ -49,6 +58,7 @@ class ArticleManager {
         tags: ["人生旅程"],
         url: "001_what_meaning_of_my_daughters'_names.html",
       },
+       
       // {
       //   id: "minimalist-design",
       //   title: "我为什么成为基督徒",
